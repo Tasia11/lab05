@@ -1,6 +1,6 @@
 ## Laboratory work V
 
-[![Build Status](https://travis-ci.com/nastya-asya/lab05.svg?branch=master)](https://travis-ci.com/nastya-asya/lab05)
+[![Build Status](https://travis-ci.com/Tasia11/lab05.svg?branch=master)](https://travis-ci.com/Tasia11/lab05)
 
 <a href="https://yandex.ru/efir/?stream_id=vQw_LH0UfN6I"><img src="https://raw.githubusercontent.com/tp-labs/lab05/master/preview.png" width="640"/></a>
 
@@ -229,9 +229,9 @@ $ git push origin master
 
 ```sh
 $ travis login --auto
-Successfully logged in as nastya-asya!
+Successfully logged in as Tasia11!
 $ travis enable
-Tasia11/lab05: enabled :)
+Tasia11/lab05: enable :)
 ```
 
 ```sh
