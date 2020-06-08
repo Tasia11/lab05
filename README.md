@@ -254,7 +254,9 @@ $ gist REPORT.md
 
 ## Homework
 
-[![Build Status](https://travis-ci.com/Tasia11/hw05.svg?branch=master)](https://travis-ci.com/Tasia11/hw05) [![Coverage Status](https://coveralls.io/repos/github/Tasia11/hw05/badge.svg?branch=master)](https://coveralls.io/github/Tasia11/hw05?branch=master)
+[![Build Status](https://travis-ci.com/Tasia11/hw05.svg?branch=master)](https://travis-ci.com/Tasia11/hw05) 
+
+[![Coverage Status](https://coveralls.io/repos/github/Tasia11/hw05/badge.svg?branch=master)](https://coveralls.io/github/Tasia11/hw05?branch=master)
 
 ### Задание
 1. Создайте `CMakeList.txt` для библиотеки *banking*.
