@@ -1,4 +1,4 @@
-cmake_minimum_required( VERSION3.4)
+cmake_minimum_required(VERSION 3.4)
 
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -11,23 +11,23 @@ project(print)
 add_library(print STATIC ${CMAKE_CURRENT_SOURCE_DIR}/sources/print.cpp)
 
 target_include_directories(print PUBLIC
- $< BUILD_INTERFACE: ${CMAKE_CURRENT_SOURCE_DIR}/include>
- $ < INSTALL_INTERFACE:include>
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>
 )
 
 if(BUILD_EXAMPLES)
-  file(GLOB EXAMPLE_SOURCES " ${CMAKE_CURRENT_SOURCE_DIR}/examples/*.cpp")
+  file(GLOB EXAMPLE_SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/examples/*.cpp")
   foreach(EXAMPLE_SOURCE ${EXAMPLE_SOURCES})
     get_filename_component(EXAMPLE_NAME ${EXAMPLE_SOURCE} NAME_WE)
     add_executable(${EXAMPLE_NAME} ${EXAMPLE_SOURCE})
     target_link_libraries(${EXAMPLE_NAME} print)
-    install( TARGETS ${EXAMPLE_NAME}
-       RUNTIMEDESTINATION bin
+    install(TARGETS ${EXAMPLE_NAME}
+      RUNTIME DESTINATION bin
     )
   endforeach(EXAMPLE_SOURCE ${EXAMPLE_SOURCES})
 endif()
 
-install( TARGETS print
+install(TARGETS print
     EXPORT print-config
     ARCHIVE DESTINATION lib
     LIBRARY DESTINATION lib
